@@ -39,5 +39,10 @@ end
 def play(board)
   9.times do
     turn(board)
+    if(won?board.class==Array)
+      "WON"
+    else
+      "DRAW"
+    end
   end
 end
